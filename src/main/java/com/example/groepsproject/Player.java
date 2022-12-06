@@ -7,7 +7,7 @@ import java.time.Period;
 
 public class Player extends Person {
 
-    Player player = new Player();
+    public Player player = new Player();
 
 
     public Player(String firstName, String lastName, String mail, String username, String password, LocalDate dateOfBirth, String IBANnr, int dummy) {
