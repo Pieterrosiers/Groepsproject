@@ -19,7 +19,7 @@
 <div class="container">
   <div class="forms-container">
     <div class="signin-signup" th:text="${failure}" th:if="${failure}" >
-      <form action="#" th:action="@{/registerPlayer}" method="post" th:object="player">
+      <form action="#" th:action="@{/registerPlayer}" method="post" th:object="${player}">
         <h2 class="title">Sign up</h2>
         <div class="input-field" >
           <i class="fas fa-user"></i>
@@ -27,27 +27,27 @@
         </div>
         <div class="input-field">
           <i class="fas fa-address-book"></i>
-          <input th:field="firstName" type="text" placeholder="First Name" id="firstnameID" name="firstname"/>
+          <input th:field="${firstName}" type="text" placeholder="First Name" id="firstnameID" name="firstname"/>
         </div>
         <div class="input-field">
           <i class="fas fa-address-book"></i>
-          <input th:field="lastName"  type="text" placeholder="Surname" id="surnameID" name="surname"/>
+          <input th:field="${lastName}"  type="text" placeholder="Surname" id="surnameID" name="surname"/>
         </div>
         <div class="input-field">
           <i class="fa-solid fa-calendar-days"></i>
-          <input th:field="dateOfBirth"  type="date" placeholder="DD/MM/YYYY" id="birthdayID" name="birthday"/>
+          <input th:field="${dateOfBirth}"  type="date" placeholder="DD/MM/YYYY" id="birthdayID" name="birthday"/>
         </div>
         <div class="input-field">
           <i class="fas fa-envelope"></i>
-          <input th:field="mail"  type="email" placeholder="Email" id="emailID" name="email"/>
+          <input th:field="${mail}"  type="email" placeholder="Email" id="emailID" name="email"/>
         </div>
         <div class="input-field">
           <i class="fas fa-lock"></i>
-          <input th:field="password"  type="password" placeholder="Password" id="passwordID" name="password"/>
+          <input th:field="${password}"  type="password" placeholder="Password" id="passwordID" name="password"/>
         </div>
         <div class="input-field">
           <i class="fa-solid fa-building-columns"></i>
-          <input th:field="IBANnr"  type="text" id="ibanID" placeholder="IBAN" />
+          <input th:field="${IBANnr}"  type="text" id="ibanID" placeholder="IBAN" />
         </div>
         <input type="submit" value="Sign Up" class="btn solid" />
         <p class="login-text">Already a member?<a class="login-link" href="login.html"> Log in</a></p>
