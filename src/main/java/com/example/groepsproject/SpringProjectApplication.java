@@ -27,6 +27,7 @@ public class SpringProjectApplication {
         return "/registerPlayer";
     }
 
+
     @PostMapping ("/registerPlayer")
     public String registrationStudentPost(@ModelAttribute Player player, Model model, RedirectAttributes redirAttrs) {
         try {
