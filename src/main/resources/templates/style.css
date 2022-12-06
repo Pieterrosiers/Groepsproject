@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation */
+
+.nav-container {
+    height: 72px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #006C76;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav .logo {
+    color: #006C76;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* Header */
+
+.header-container {
+    background: url('images/circles.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: calc(100vh - 72px);
+
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header h1 {
+    color: #006C76;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 78px;
+}
+
+header p {
+    font-size: 24px;
+    line-height: 54px;
+    color: #006C76;
+    margin-bottom: 50px;
+}
+
+header a {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+
+    background: #006C76;
+    border-radius: 49px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+header .hero-image {
+    position: relative;
+}
+
+header .hero-image img {
+    max-width: 90%;
+
+}
