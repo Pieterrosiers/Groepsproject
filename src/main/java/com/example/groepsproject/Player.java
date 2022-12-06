@@ -7,6 +7,9 @@ import java.time.Period;
 
 public class Player extends Person {
 
+    Player player = new Player();
+
+
     public Player(String firstName, String lastName, String mail, String username, String password, LocalDate dateOfBirth, String IBANnr, int dummy) {
         super(firstName,lastName,mail,username,password,dateOfBirth,IBANnr);
     }
@@ -45,6 +48,11 @@ public class Player extends Person {
         MySQLConnect.staticConnection.close();
         MySQLConnect.staticConnection = null;
     }
+
+    public Player() {
+        super();
+    }
+
     static public void makeNewPlayer(String firstName, String lastName, String mail, String username, String password, LocalDate dateOfBirth, String IBANnr) throws SQLException {
         Player player = new Player(firstName, lastName, mail, username, password, dateOfBirth, IBANnr);
     }
@@ -292,6 +300,8 @@ public class Player extends Person {
         MySQLConnect.staticConnection = null;
     }
 
+
+
     static public void setIBANnr(String IBANnr, String username) throws SQLException {
         //SQL String definiëren
         String sql = "UPDATE Organizer SET IBAN_nr=? WHERE USERNAME = '" + username + "'";
@@ -351,6 +361,10 @@ public class Player extends Person {
         //De boolean b retourneren
         return b;
     }
+
+
+
+
     public static void main(String[] args) throws SQLException {
 
     }

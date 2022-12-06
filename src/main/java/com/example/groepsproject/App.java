@@ -15,6 +15,7 @@ public class App {
         return loggedInOrganizer;
     }
 
+    public static App app = new App(){};
 
     public static void registerPlayer(String username,String firstName, String lastName, String mail, String password,String IBANnr, LocalDate dateOfBirth) throws PlayerException, SQLException {
         if(!Player.usernameExists(username)){

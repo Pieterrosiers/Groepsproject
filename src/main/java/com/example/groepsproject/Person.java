@@ -31,6 +31,42 @@ public abstract class Person {
         this.IBANnr = IBANnr;
     }
 
+    public Person() {
+
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setIBANnr(String IBANnr) {
+        this.IBANnr = IBANnr;
+    }
+
     public String getUsername() {
         return username;
     }
